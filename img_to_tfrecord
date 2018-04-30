@@ -27,4 +27,4 @@ with tf.Session() as sess:
             writer.write(example.SerializeToString())  #序列化为字符串
     coord.request_stop()  # 多线程关闭
     coord.join(threads)
-    writer.close()
+    writer.close() 

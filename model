@@ -64,4 +64,4 @@ def inference(input_tensor,regularizer):
         fc3_biases = tf.get_variable("bias", [2], initializer=tf.constant_initializer(0.1))
         logit = tf.matmul(fc2, fc3_weights) + fc3_biases
 
-    return logit
+    return logit 
